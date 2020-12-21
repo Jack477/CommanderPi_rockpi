@@ -154,7 +154,7 @@ def reboot():
 ### get cpu usage in MHz & GHz
 def refusage():
 	cpu_freq = psutil.cpu_freq()
-	buff = cpu_freq[2]
+	buff = cpu_freq[0]
 	return str(buff)+" MHz"
 
 ### get gpu usage in MHz & GHz
